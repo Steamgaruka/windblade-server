@@ -7,7 +7,7 @@ const crypto = require('crypto');
 
 const PORT = process.env.PORT || 8080;
 const MAXP = 50;            // players per match
-const PUBLIC_WAIT = 30;     // seconds a public lobby waits for more players
+const PUBLIC_WAIT = 8;      // seconds a public lobby waits for more players (then bots fill in)
 const PRIVATE_WAIT = 60;    // seconds a private (code) lobby waits unless host presses start
 const NEAR = 1900;          // events/state are relayed to players within this distance
 const FAR_EVERY = 8;        // far players still get every 8th state update (map + alive count)
